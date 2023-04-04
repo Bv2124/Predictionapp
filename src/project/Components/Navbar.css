@@ -1,0 +1,232 @@
+.NavBar{
+    background-color:#d72924!important;
+    display: flex;
+}
+.HCSD{
+    float: left;
+    display: flex;
+    margin: 0;
+    font-weight: 600;
+    color: white!important;
+    padding-right: 1em;
+}
+.HCSD a{
+    padding: 1em;
+    padding-right: 1.5em!important;
+    padding-left: 1.5em!important;
+    text-align: center;
+    color: white!important;
+}
+.HCSD a:hover{
+    color:#d72924 !important;
+    background-color: white;
+}
+.Home{
+    background-color: #402423;
+    padding-right: 2em;
+}
+.dropdown-menu a{
+    color: black!important;
+}
+.Search{
+    display: inline-block;
+    margin: 0;
+}
+.Search input{
+    float: right;
+    padding: 0.6em;
+    border: none;
+}
+.Search_I{
+    float: right;
+    padding: 0.6em;
+    color: white;
+    background-color: black;
+}
+.Navi{
+    padding: 0!important;
+}
+.dropdown-menu.show{
+    display: flex!important;
+    flex-direction: row;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.C1:hover,.C2:hover,.C3:hover,.C4:hover,.C5:hover,.C6:hover{
+        background-color: rgb(168, 166, 166);
+    }
+.C1, .C2, .C3, .C4, .C5, .C6{
+        text-align: center;
+    }
+.C1 a,.C2 a,.C3 a,.C4 a,.C5 a,.C6 a{
+    display:flex;
+    padding: 0.5em;
+}
+.Dropdown_Content{
+    display: flex;
+    width: 100%;
+    right: 10%;
+    background-color:  rgb(207, 205, 205);
+}
+.Nav_Logo{
+    display: none;
+}
+.Side_Nav_Content{
+    width: 100%;
+}
+.side-nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left:0%;
+    right:60%;
+    height: 100%;
+    background:radial-gradient(transparent,rgb(58, 57, 57));
+    transition: 0.4s;
+    width: 100%;
+  }
+  /* This makes the side menu visible */
+  .side-nav--active {
+    left: -26%;
+    right: 100%;
+    opacity: 0!important;
+  }
+  .Side_Nav_Bg{
+    background-color:grey;
+    height: 100%;
+    z-index: 999;
+    padding: 1em;
+    float: left;
+  }
+  /* Style the side menu's links */
+  .side-nav a {
+    text-decoration: none;
+    font-size: 100%;
+    padding: 0.5em;
+    display: block!important;
+    transition: 0.3s;
+    color: white!important;
+  }
+  .side-nav a:hover{
+    color: #ab140f!important;
+  }
+  .SIDE{
+    overflow: scroll!important;
+    height: 100%;
+  }
+  .SIDE a{
+    color: black!important;
+    height: 0!important;
+    padding: 0.9em!important;
+  }
+  .Side_Search{
+    padding: 0!important;
+  }
+  .side-nav a:hover {
+    color: orange;
+  }  
+  /* Stye the close button */
+  .close-button {
+    /* display: block; */
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+    border: solid black;
+  }
+  
+  .close-button:hover .close-button:active {
+    color:#d72924
+  }
+  
+  /* Style the open menu */
+  .open-button {
+    padding: 5px 20px;
+    background: transparent;
+    font-size: 1.5em;
+    color:black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+    float:right;
+  }
+  .nav-link{
+    padding: 1em!important;
+  }
+  @media (max-width:769px) {
+    .open-button{
+      display: block;
+      float: right;
+    }}
+    @media (max-width:1350px) {
+        .NavBar{
+         position: relative;
+         top: 1em;
+        } 
+     }
+     @media (max-width:1101px) {
+         .Dropdown_Content{
+             flex-direction: column;
+             height: 10em;
+             overflow: scroll;
+             text-align: center;
+         }
+     }
+     @media (max-width:1143px) {
+        .HCSD a{
+             padding: 0.5em;
+             padding-left: 0.5em!important;
+             padding-right: 0.5!important;
+         }
+     }
+     @media (max-width:1047px) {
+         .HCSD a{
+             padding: 0em;
+             padding-left: 0.5em!important;
+             padding-right: 0.5em!important;
+         }
+     }
+     @media (max-width:1057px) {
+         .HCSD a{
+             padding: 0em;
+             padding-left: 0.5em!important;
+             padding-right: 0.5em!important;
+         }
+     }
+     @media (max-width:769px) {
+         .NavBar{
+            background-color: white!important;
+         }
+         .Nav_Logo{
+             display: block;
+             width: 40%;
+             float: left;
+             margin: 0 ;
+         }
+         #responsive-navbar-nav{
+            display: none!important;
+         }
+         .C1:hover,.C2:hover,.C3:hover,.C4:hover,.C5:hover,.C6:hover{
+            background-color:transparent!important;
+        }
+     }
+     @media (min-width:769px) {
+        .Side_Nav_Content{
+            display: none;
+        }
+     }
+    @media (max-width:990px) {
+      .nav-link{
+        padding: 1em!important;
+        display: inline-block!important;
+        height: 68%;
+      }
+    }

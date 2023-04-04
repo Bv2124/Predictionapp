@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+.H1{
+    background-color: #222222;
+    color:#b9b9b9;
+  }
+  .Header_content{
+    width: 80%;
+    margin: 0 auto;
+    margin-right: auto!important;
+    margin-left: auto!important;
+  }
+  .Header_content  a{
+    text-decoration: none;
+    color: #b9b9b9!important;
+  }
+  .Mail{
+    float: left;
+  }
+  .Mail a{
+    position: relative;
+    top: 8px;
+  }
+  .Mail a:hover{
+    color: red !important;
+  }
+  .MLR{
+    margin-bottom: 0!important;
+    display: flex;
+  }
+  .Login{
+    margin: 0 0;
+    text-align: right;
+    position: relative;
+    top: 8px;
+    display: inline;
+  }
+  .Login a{
+    padding-right: 2em;
+  }
+  .header_SocialMedia {
+    display: inline-block;
+  }
+  .header_SocialMedia a{
+    padding-right: 1em!important;
+  }
+  .Contact{
+    float: right;
+  }
+  .Contact button{
+    background-color: #d72924;
+    color:#fce5ea;
+    border: none;
+    padding: 8px 13px;
+    font-weight: 700;
+    position: relative;
+    top: -8px!important;
+  }
+  .Logo{
+    background-color: white;
+    display: inline;
+  }
+  .Logoimg{
+    padding: 3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .loader {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    left: 8em;
+    top: -2.5em;
+    transform: translateX(-30px);
+   }
+   
+   .loader::before,
+   .loader::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 5em;
+    border-radius: 30%;
+    animation: rotate 2s infinite;
+   }
+   
+   .loader::before {
+    background-color: #b9b9b9;
+    content: "";
+   }
+   
+   .loader::after {
+    background-color:#00aeef;
+    animation-delay: 0.5s;
+    content: " ";
+   }
+   
+   @keyframes rotate {
+    0%,100% {
+     left: 50px;
+     transform: scale(.1);
+    }
+   
+    25% {
+     transform: scale(.1);
+    }
+   
+    50% {
+     left: 0;
+    }
+   
+    75% {
+     transform: scale(1);
+    }
+   }
+   .Ad{
+    padding: 0.5em;
+    overflow: hidden;
+    outline: solid 2px;
+    float:right;
+    position: relative;
+    top: 0.5em;
+}
+.PES{
+  width: 50%;
+  display: inline;
+}
+.Peace{
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.LearnMore{
+    padding: calc(.900rem - 1px) calc(0.5rem - 1px);
+    font-weight: 700;
+    border: none;
+    border-radius: 0.3em;
+    float: right;
+    color: white;
+    background-color:#00aeef;
+}
+.LearnMore:hover{
+    background-color: white;
+    color: #00aeef;
+    outline: solid grey 1px;
+}
+@media (max-width:990px) {
+  .MLR{
+    display: block;
+    text-align: center;
+  }
+  .Mail{
+    text-align: center;
+  }
+  .Contact{
+    display: inline-block;
+    float: none;
+  }
+  .Login{
+    top: 0px!important;
+  }
+  .Contact button{
+    top: 0px!important;
+  }
+  .Logo,.loader{
+    display: none;
+  }
+  .LearnMore{
+    float: right!important;
+    padding: 1em;
+  }
+  .Ad{
+    text-align: center;
+    margin-bottom: 0;
+    padding:0.5em;
+  }
+}
+@media (max-width:650px) {
+  .header_SocialMedia,.Mail{
+    display: none;
+  }
+  .Login{
+    top: 0;
+  }
+  .Contact button{
+    top: 0px !important;
+  }
+  .LearnMore{
+    float: none!important;
+  }
+}
+@media (max-width:395px) {
+  .Login a{
+    padding-right: 0.5em!important;;
+  }
+}
+@media (max-width:990px) {
+  .Mail{
+    width: 100% !important;;
+    flex: 0 0 auto
+  }
+}
