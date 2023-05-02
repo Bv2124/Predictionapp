@@ -97,7 +97,9 @@ function App() {
           ))}
         </tbody>
       </table>
-      <button onClick={handlePredictClick}>Predict</button>
+          <div style={{display:'flex',justify-content:'center'}}>
+          <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
+          </div>
       <h1>Predicted Ratio for the Next year</h1>
       <table>
         <thead>
@@ -118,7 +120,9 @@ function App() {
       <div>
         <label>Next Year's First Month Expense</label>
         <input type="number" value={nextYearJanExpense} name={nextYearJanExpense} onChange={handleNextYearJanExpenseChange} />
-        <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
+         <div style={{display:'flex',justify-content:'center'}}>
+          <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
+          </div>
       </div>
       <h1>Predicted Ratio for the Next year</h1>
       <table>
