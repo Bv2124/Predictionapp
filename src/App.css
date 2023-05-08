@@ -1,6 +1,11 @@
 .Predict{
   text-align: center;
   align-items: center;
+  margin:0 auto;
+}
+.Result{
+  display:flex;
+  align-items:center;
 }
 @media screen and (min-width:600px) {
   .Predict{
