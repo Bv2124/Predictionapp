@@ -99,7 +99,7 @@ export default function App() {
         </tbody>
       </table>
           <div style={{display:'flex',justifyContent:'center'}}>
-          <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
+          <button onClick={handlePredictClick}>Predict Next Year's Expenses</button>
           </div>
       <h1>Predicted Ratio for the Next year</h1>
       <table>
