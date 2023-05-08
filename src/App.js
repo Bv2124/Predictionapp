@@ -77,7 +77,8 @@ function App() {
   };
 
   return (
-    <div className="Predict">
+    <div>
+         <div className="Predict">
       <h1>Monthly Expenses</h1>
       <table>
         <thead>
@@ -97,7 +98,7 @@ function App() {
           ))}
         </tbody>
       </table>
-          <div style={{display:'flex',justify-content:'center'}}>
+          <div style={{display:'flex',justifyContent:'center'}}>
           <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
           </div>
       <h1>Predicted Ratio for the Next year</h1>
@@ -120,7 +121,7 @@ function App() {
       <div>
         <label>Next Year's First Month Expense</label>
         <input type="number" value={nextYearJanExpense} name={nextYearJanExpense} onChange={handleNextYearJanExpenseChange} />
-         <div style={{display:'flex',justify-content:'center'}}>
+         <div style={{display:'flex',justifyContent:'center'}}>
           <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
           </div>
       </div>
@@ -178,7 +179,6 @@ function App() {
   </tbody>
 </table>
     </div>
+    </div>
   );
 }
-
-export default App;
