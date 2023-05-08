@@ -81,12 +81,7 @@ export default function App() {
          <div className="Predict">
       <h1>Monthly Expenses</h1>
       <table className="Result">
-        <thead>
-          <tr>
-            <th>Month</th>
-            <th>Expense</th>
-          </tr>
-        </thead>
+         <h1>Month and their Corresponding Expenses</h1>
         <tbody>
           {Object.entries(monthlyExpenses).map(([month, expense]) => (
             <tr key={month}>
@@ -103,12 +98,7 @@ export default function App() {
           </div>
       <h1>Predicted Ratio for the Next year</h1>
       <table className="Result">
-        <thead>
-          <tr>
-            <th>Month</th>
-            <th>Ratio</th>
-          </tr>
-        </thead>
+        <h1>Month and their corresponding Expenses</h1>
         <tbody>
           {Object.entries(predictedExpenses).map(([month, expense]) => (
             <tr key={month}>
@@ -127,7 +117,7 @@ export default function App() {
       </div>
       <h1>Predicted Ratio for the Next year</h1>
       <table className="Table">
-  <tbody>
+  <tbody className="Result">
     <tr>
       <td>January</td>
       <td>{nextYearJanExpense}</td>
