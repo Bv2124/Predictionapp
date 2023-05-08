@@ -81,7 +81,6 @@ export default function App() {
          <div className="Predict">
       <h1>Monthly Expenses</h1>
       <table className="Result">
-         <h1>Month and their Corresponding Expenses</h1>
         <tbody>
           {Object.entries(monthlyExpenses).map(([month, expense]) => (
             <tr key={month}>
@@ -94,9 +93,9 @@ export default function App() {
         </tbody>
       </table>
           <div style={{display:'flex',justifyContent:'center'}}>
-          <button onClick={handlePredictClick}>Predict Next Year's Expenses</button>
+          <button onClick={handlePredictClick}>Predict the ratio</button>
           </div>
-      <h1>Predicted Ratio for the Next year</h1>
+      <h1>Predicted Ratio for the current year</h1>
       <table className="Result">
         <tbody>
           {Object.entries(predictedExpenses).map(([month, expense]) => (
@@ -114,7 +113,7 @@ export default function App() {
           <button onClick={handlePredictClic}>Predict Next Year's Expenses</button>
           </div>
       </div>
-      <h1>Predicted Ratio for the Next year</h1>
+      <h1>Predicted Expenses for the Next year based on the prediction</h1>
       <table className="Table Result">
   <tbody>
     <tr>
