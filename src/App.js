@@ -80,7 +80,7 @@ export default function App() {
     <div>
          <div className="Predict">
       <h1>Monthly Expenses</h1>
-      <table>
+      <table className="Result">
         <thead>
           <tr>
             <th>Month</th>
@@ -102,7 +102,7 @@ export default function App() {
           <button onClick={handlePredictClick}>Predict Next Year's Expenses</button>
           </div>
       <h1>Predicted Ratio for the Next year</h1>
-      <table>
+      <table className="Result">
         <thead>
           <tr>
             <th>Month</th>
@@ -126,7 +126,7 @@ export default function App() {
           </div>
       </div>
       <h1>Predicted Ratio for the Next year</h1>
-      <table>
+      <table className="Table">
   <tbody>
     <tr>
       <td>January</td>
